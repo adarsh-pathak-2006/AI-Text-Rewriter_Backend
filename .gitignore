@@ -20,7 +20,6 @@ venv.bak/
 
 # Deployment
 staticfiles/
-build.sh
 
 # But allow the example
 !.env.example
