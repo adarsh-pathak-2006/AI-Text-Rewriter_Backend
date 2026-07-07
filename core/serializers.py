@@ -7,10 +7,6 @@ class UserInputSerializer(ModelSerializer):
         model=MainDB
         fields=['input', 'style']
 
-class OutputSerializer(ModelSerializer):
-    class Meta:
-        model=MainDB
-        fields=['output']
 
 class MainDBSerializer(ModelSerializer):
     class Meta:
