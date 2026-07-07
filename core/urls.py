@@ -3,5 +3,5 @@ from core.views import *
 
 urlpatterns = [
     path('all/', TotalEntriesAPI.as_view(), name='total'),
-    path('output/', FinalOutputAPI.as_view(), name='output'),
+    path('output/<int:pk>/', FinalOutputAPI.as_view(), name='output'),
 ]
