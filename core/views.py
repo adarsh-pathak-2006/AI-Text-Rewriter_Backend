@@ -22,9 +22,6 @@ class TotalEntriesAPI(APIView):
             obj=MainDB.objects.create(input=text, style=style, output=output)
             serialized=MainDBSerializer(obj)
             return Response(serialized.data)
-
-
-
         else:
             return Response({ 'invalid':'invalid inputs' })
 
