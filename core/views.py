@@ -14,7 +14,7 @@ class TotalEntriesAPI(APIView):
 
     def post(self, request):
         serial=UserInputSerializer(data=request.data)
-        if serial.is_valid():
+        if serial.is_valid(raise_exception=True):
             text=serial.validated_data['input']
             style=serial.validated_data['style']
             
